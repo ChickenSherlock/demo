@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body >
+    <div id="app">
+      <h1>Smoke removal in laparoscopic surgery</h1>
+      <h2>Demo Application </h2>
+      <h4>Trivial noise based smoke generation</h4>
+      <div id="canvas1">
+      </div>
+      <label for="xoffset">X offset</label>
+      <input step="0.1" min="-5" max="5" type="range" id="xoffset" value="0">
+      <label for="yoffset">Y offset</label>
+      <input step="0.1" min="-5" max="5" type="range" id="yoffset" value="0">
+      <label for="radius">size</label>
+      <input step="0.1" min="0" max="10" type="range" id="radius" value="5.0">
+      <label for="animated">animated</label>
+      <input id="animated" type="checkbox" checked>
+      <br>
+      <label for="inColor">color</label>
+      <input value="#8f8f8f" id="inColor" type="color">
+      <label for="blurriness">alpha</label>
+      <input id="blurriness" value="0.2" type="range" min="0" max="1" step="0.05">
+      <label for="alpha">blurriness</label>
+      <input id="alpha" value="0.2" type="range" min="0" max="10" step="0.1">
+      <label for="detail">detail</label>
+      <input id="detail" value="5.0" type="number" min="1" max="50" step="1">
+    </div>
+  </body>
+</html>
