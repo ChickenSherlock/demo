@@ -1,4 +1,4 @@
-
+import "./style.css"
 let perlin_image;
 
 function preload(){
