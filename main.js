@@ -1,10 +1,10 @@
-import "./public/style.css";
+
 
 let perlin_image;
 
 function preload(){
-    perlin_image = loadShader('./vertex.glsl', './fragment.glsl');
-    backgroundImage = loadImage("/laparoscopic-Surgery.jpg");
+    perlin_image = loadShader('vertex.glsl', 'fragment.glsl');
+    backgroundImage = loadImage("laparoscopic-Surgery.jpg");
 }
 function setup(){
     createCanvas(700,700, WEBGL)
